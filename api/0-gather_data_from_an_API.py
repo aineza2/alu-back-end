@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-import requests
-import sys
+"""Displays tasks information of a given employee
+Trying two lines
+"""
+from requests import get
+from sys import argv
+
 
 def get_employee_todo_progress(employee_id):
     response = requests.get(f'https://jsonplaceholder.typicode.com/users/{employee_id}/todos')
